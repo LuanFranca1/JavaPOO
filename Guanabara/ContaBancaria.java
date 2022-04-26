@@ -1,4 +1,4 @@
-package javaapplication2;
+package javaapplication2;                                      //aula05.2
 
 public class Conta {
 
