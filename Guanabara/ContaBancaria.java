@@ -9,6 +9,16 @@ public class Conta {
     private boolean status;
 
     //métodos personalizados;
+     public Conta(){
+        super();
+    }
+    public Conta(int numConta, String tipoConta, String donoConta, double saldo, boolean status) {
+        this.numConta = numConta;
+        this.tipoConta = tipoConta;
+        this.donoConta = donoConta;
+        this.saldo = saldo;
+        this.status = status;
+    }
     public void estadoAtual() {
         System.out.println("Conta " + this.getNumConta());
         System.out.println("TIpo conta" + this.getTipoConta());
@@ -78,15 +88,6 @@ public class Conta {
         } else {
             //Não dá para pagar a conta se ela n estiver aberta;
         }
-    }
-
-    public Conta(String donoConta,int numConta,boolean status, String tipoConta,double saldo) {
-        this.numConta = numConta;
-        this.tipoConta = tipoConta;
-        this.setSaldo(0);
-        this.setStatus(false);
-
-        this.donoConta = donoConta;
     }
 
     public int getNumConta() {
