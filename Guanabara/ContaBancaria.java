@@ -135,7 +135,7 @@ public class Conta {
 package javaapplication2;
 
 public class JavaApplication2 {
-    public static void main(String[] args) {
+    public static void main(String[] args) {    // para não ter que fazer um super método eu passo os parametros dentro da chamada;
         Conta p1 = new Conta();
         p1.setDonoConta("jubilosca apenas");
         p1.setNumConta(101010);
